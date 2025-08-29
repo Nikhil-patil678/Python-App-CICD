@@ -64,7 +64,7 @@ for Continuous integration and continuous deployment .
 #### From your local machine : 
 bash 
 
-      scp -i pem-linux-key.pem pem-linux-key.pem ubuntu@<jenkins-server-public-ip>:/home/ubuntu
+      scp -i your-key your-key  ubuntu@<jenkins-server-public-ip>:/home/ubuntu
 
 
 ### Step 2 : Add Pem Key To Jenkins Credentials 
@@ -191,9 +191,9 @@ bash
 
    *  `http://< jenkins-server-ip >:8080/github-webhook/`
 
-- Content Type : application/x-www-form-urlencoded 
+3. Content Type : application/x-www-form-urlencoded 
 
-- Trigger : Just the push event
+4. Trigger : Just the push event
 
 ![my image](./images/Screenshot%202025-08-30%20034927.png)
 
